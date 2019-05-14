@@ -22,3 +22,7 @@ Route::post('/tasks', 'TaskController@store')->name('tasks.store');
 Route::get('tasks/{task}', 'TaskController@show')->name('tasks.show');
 Route::put('tasks/{task}', 'TaskController@update')->name('tasks.update');
 Route::delete('tasks/{task}', 'TaskController@destroy')->name('tasks.delete');
+
+Route::post('/register', 'AuthController@register')->name('users.register');
+Route::post('/login', 'AuthController@login')->name('users.login');
+Route::post('/logout', 'AuthController@logout')->name('users.logout');
