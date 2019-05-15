@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
+    Debugbar::info('123');
     return view('welcome');
+
 });
